@@ -1,0 +1,59 @@
+// Tạo biến
+// background
+$c1-background-primary: black;
+$c2-background-primary: #2a73dd;
+$c3-background-light: #fff;
+// text
+$c1-text-primary: #2a73dd;
+$c2-text-dark: #000;
+$c3-text-ligth: gray;
+$c4-text-ligth: #ffffff;
+$c5-text-dark: #000000;
+// font-size
+$text-xs: 14px;
+$text-base: 16px;
+$text-md: 18px;
+$text-xl: 20px;
+$text-2xl: 22px;
+$text-3xl: 30px;
+$text-4xl: 40px;
+$text-5xl: 50px;
+$text-6xl: 60px;
+// font-weight
+$text-thin: 100;
+$text-ligth: 300;
+$text-regular: 400;
+$text-semibold: 600;
+$text-bold: 700;
+$text-black: 900;
+
+// ========== mixin (dùng hàm js cho sass tương tự) ===========//
+
+// @mixin text($fz, $fw, $fc) {
+//   font-size: $fz;
+//   font-weight: $fw;
+//   color: $c;
+// }
+
+@mixin text($fz: $text-2xl, $fw: $text-bold, $fc: $c1-text-primary) {
+  font-size: $fz;
+  font-weight: $fw;
+  color: $fc;
+}
+
+// button
+
+@mixin button($bg, $pd, $b, $br, $fz, $fw, $c, $bg-hover, $c-hover) {
+  background: $bg;
+  padding: $pd;
+  border: $b;
+  border-radius: $br;
+  cursor: pointer;
+  font-size: $fz;
+  font-weight: $fw;
+  color: $c;
+  &:hover {
+    background: $bg-hover;
+    color: $c-hover;
+  }
+}

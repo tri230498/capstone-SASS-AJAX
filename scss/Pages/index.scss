@@ -1,0 +1,104 @@
+@import "../Base/base.scss";
+@import "../Themes/variable";
+
+#header {
+  padding: 15px;
+  background-color: $c1-background-primary;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      img {
+        width: 100%;
+      }
+    }
+    .form-header {
+      display: flex;
+      align-items: center;
+      .cart {
+        color: $c4-text-ligth;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      .Login {
+        color: $c3-text-ligth;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      .Register {
+        color: $c3-text-ligth;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#menu {
+  .container {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    .home {
+      position: relative;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 0px;
+      @include text($text-xl, $text-regular, $c5-text-dark);
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $c5-text-dark;
+      }
+    }
+    .men {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 0px;
+      @include text($text-xl, $text-regular, $c5-text-dark);
+    }
+    .woman {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 0px;
+      @include text($text-xl, $text-regular, $c5-text-dark);
+    }
+    .kid {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 0px;
+      @include text($text-xl, $text-regular, $c5-text-dark);
+    }
+    .sport {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 0px;
+      @include text($text-xl, $text-regular, $c5-text-dark);
+    }
+  }
+}
+
+.carousel {
+    padding-top: 20px;
+    .container {
+        background-image: url('../../img/image\ 6.png');
+        background-size: cover;
+        background-position: center;
+        #item-carousel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 393px;
+            .col-7 {
+
+            }
+            .col-5 {
+                
+            }
+        }
+    }
+}
