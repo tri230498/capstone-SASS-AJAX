@@ -48,7 +48,8 @@
     </header>
     <!-- end header -->
 
-    <section id="menu">
+
+    <sectionn id="menu">
       <div class="container">
         <a href="./index.html" class="home">Home</a>
         <a class="men">Men</a>
@@ -56,59 +57,65 @@
         <a class="kid">Kid</a>
         <a class="sport">Sport</a>
       </div>
-    </section>
+    </sectionn>
     <!-- end menu -->
 
-    <section class="carousel" >
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner" id="carousel">
-          <!-- <div class="carousel-item active">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" id="item-carousel">
-              <img src="..." class="d-block w-100" alt="..." >
-            </div>
-            <div class="carousel-item" id="item-carousel">
-              <img src="..." class="d-block w-100" alt="...">
-            </div> -->
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"
-            ><i class="fa-solid fa-caret-left"></i
-          ></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span aria-hidden="true"
-            ><i class="fa-solid fa-caret-right"></i
-          ></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-    <!-- end carousel item -->
 
-    <section id="Feature">
-      <div class="container">
-        <h2 class="text-center py-5">-Product Feature-</h2>
-        <div class="row" id="item-feature"></div>
-      </div>
+    
+    <section id="register" style="height: 500px;">
+        <h1 class="text-center">Register</h1>
+        <div class="container">
+            <form  id="formRegister" onclick="checkValidity()">
+              <div class="row">
+                <div class="col-6 px-5">
+                    <div class="email d-flex">
+                        <label for="email">email:</label>
+                        <!-- Kiểm tra input không được để trống -->
+                        <input type="email" id="txtEmail" class="border-0 flex-grow-1 ps-2" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                      </div>
+                      <p class="text-danger" id="spanEmail"></p>
+                    <div class="password d-flex">
+                        <label for="">password:</label>
+                        <input type="password" id="txtPassWord" class="border-0 flex-grow-1 ps-2" required>
+                      </div>
+                      <p class="text-danger" id="spanPassWord"></p>
+                    <div class="passwordConfirm d-flex">
+                        <label for="">password confirm:</label>
+                        <input type="password" id="txtPassWordConfirm" class="border-0 flex-grow-1 ps-2">
+                      </div>
+                      <p class="text-danger" id="spanPassWordConfirm"></p>
+                </div>
+                <div class="col-6 px-5">
+                    <div class="name d-flex">
+                        <label for="email">name:</label>
+                        <input type="text" id="txtName" class="border-0 flex-grow-1 ps-2" required 
+                        pattern="[a-zA-Z_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễếệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s]+$">
+                      </div>
+                      <p class="text-danger" id="spanName"></p>
+                    <div class="password d-flex">
+                        <label for="">phone:</label>
+                        <input type="text" id="txtPhone" class="border-0 flex-grow-1 ps-2" required pattern="[0-9]{10,}$">
+                      </div>
+                      <p class="text-danger" id="spanPhone"></p>
+                      
+                    <div class="Gender">
+                        <label for="" class="me-3">Gender:</label>
+                        <input type="radio" name="radio" id="radio1" style="width: 30px; height: 30px" required checked>
+                        <label for="radio1">Male</label>
+                        <input type="radio" name="radio" id="radio2" style="width: 30px; height: 30px">
+                        <label for="radio2">Female</label>
+                    </div>
+                    <button type="button" class="text-white border-0 mt-5" id="btnCheck">
+                      Submit
+                    </button>
+                </div>
+
+              </div>
+              </form>
+            </div> 
+        </div>
     </section>
-    <!-- end Feature -->
+    <!-- end form -->
 
 
     <footer>
@@ -169,7 +176,9 @@
     </footer>
     <!-- end footer -->
 
-    
+
+
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-decoration: none;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -36,11 +35,13 @@
   color: gray;
   margin: 0 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 #header .container .form-header .Register {
   color: gray;
   margin: 0 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #menu .container {
@@ -56,6 +57,7 @@
   font-size: 20px;
   font-weight: 400;
   color: #000000;
+  text-decoration: none;
 }
 #menu .container .home::after {
   content: "";
@@ -100,16 +102,108 @@
 }
 
 .carousel {
-  padding-top: 20px;
-}
-.carousel .container {
   background-image: url("../../img/image 6.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  position: relative;
+  height: 500px;
 }
-.carousel .container #item-carousel {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 393px;
+.carousel .carousel-inner {
+  position: relative;
+}
+.carousel .carousel-inner .carousel-item {
+  position: relative;
+  height: 100%;
+}
+.carousel .carousel-inner .carousel-item a {
+  display: inline-block;
+}
+.carousel .carousel-inner .carousel-item a img {
+  width: 100%;
+  padding-left: 100px;
+}
+.carousel .carousel-inner .carousel-item .item-info {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 160px;
+  right: 185px;
+}
+.carousel .carousel-inner .carousel-item .item-info h2 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #000;
+}
+.carousel .carousel-inner .carousel-item .item-info p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+}
+.carousel .carousel-control-prev i {
+  color: black;
+  font-size: 55px;
+}
+.carousel .carousel-control-next i {
+  color: black;
+  font-size: 55px;
+}
+
+#Feature .container h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+}
+#Feature .container .row .col-4 {
+  padding: 30px;
+}
+#Feature .container .row .col-4 .card {
+  border: none;
+  border-radius: none;
+  background-color: #f8f8f8;
+}
+#Feature .container .row .col-4 .card .card-body p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+footer .footer-top .container {
+  text-align: center;
+}
+footer .footer-top .container .row .col-4 {
+  padding: 0;
+}
+footer .footer-top .container .row .col-4 .infor-footer {
+  text-align: left;
+}
+footer .footer-top .container .row .col-4 .infor-footer h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+footer .footer-top .container .row .col-4 .infor-footer p {
+  text-align: left;
+  margin-bottom: 0;
+}
+footer .footer-bottom {
+  margin-top: 50px;
+  background-color: #f8f8f8;
+  padding: 40px 0;
+}
+footer .footer-bottom .container .row .col-4 {
+  padding: 0;
+}
+footer .footer-bottom .container .row .col-4 h4 {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+footer .footer-bottom .container .row .col-4 p {
+  text-align: left;
+  margin-bottom: 0;
 }

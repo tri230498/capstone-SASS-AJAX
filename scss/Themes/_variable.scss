@@ -3,6 +3,7 @@
 $c1-background-primary: black;
 $c2-background-primary: #2a73dd;
 $c3-background-light: #fff;
+$c4-background-warning: #f8b653;
 // text
 $c1-text-primary: #2a73dd;
 $c2-text-dark: #000;
@@ -26,6 +27,18 @@ $text-regular: 400;
 $text-semibold: 600;
 $text-bold: 700;
 $text-black: 900;
+
+// padding
+$p-1: 10px;
+$p-2: 20px;
+$p-3: 30px;
+$p-4: 40px;
+
+// margin
+$m-1: 10px;
+$m-2: 20px;
+$m-3: 30px;
+$m-4: 40px;
 
 // ========== mixin (dùng hàm js cho sass tương tự) ===========//
 
