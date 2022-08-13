@@ -123,6 +123,10 @@
 .carousel .carousel-inner .carousel-item a img {
   width: 100%;
   padding-left: 100px;
+  transition: all 0.3s ease;
+}
+.carousel .carousel-inner .carousel-item a img:hover {
+  transform: translateY(-40px) rotate(-10deg);
 }
 .carousel .carousel-inner .carousel-item .item-info {
   display: inline-block;
@@ -141,6 +145,17 @@
   font-size: 20px;
   font-weight: 300;
   color: #000;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  width: 290px;
+}
+.carousel .carousel-inner .carousel-item .item-info button a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
 }
 .carousel .carousel-control-prev i {
   color: black;
@@ -164,11 +179,29 @@
   border-radius: none;
   background-color: #f8f8f8;
 }
+#Feature .container .row .col-4 .card img {
+  transition: all 0.3s ease-in-out;
+}
+#Feature .container .row .col-4 .card img:hover {
+  transform: translateY(-40px) rotate(-10deg);
+}
 #Feature .container .row .col-4 .card .card-body p {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+#Feature .container .row .col-4 .card .card-body button a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 300;
+  color: #000;
+}
+#Feature .container .row .col-4 .card .card-body .price {
+  background-color: #f3f3f3;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
 }
 
 footer .footer-top .container {
@@ -209,6 +242,20 @@ footer .footer-bottom .container .row .col-4 p {
   text-align: left;
   margin-bottom: 0;
 }
+footer .footer-bottom #backtop {
+  transition: all ease-out;
+}
+footer .footer-bottom #backtop i {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+footer .footer-bottom #backtop i:hover {
+  font-size: 30px;
+}
 
 #register .container form .col-6 div {
   border-bottom: 3px solid #ae18e2;
@@ -246,4 +293,96 @@ footer .footer-bottom .container .row .col-4 p {
   font-size: 30px;
   font-weight: 400;
   color: #000000;
+}
+
+#product-name .container #productName {
+  margin-top: 30px;
+}
+#product-name .container #productName .col-5 {
+  padding: 0px 100px 100px 100px;
+}
+#product-name .container #productName .col-5 .img {
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+#product-name .container #productName .col-5 .img img {
+  width: 100%;
+  object-fit: cover;
+}
+#product-name .container #productName .col-7 h4 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #000;
+}
+#product-name .container #productName .col-7 .dess {
+  font-size: 16px;
+  font-weight: 400;
+  color: #140101;
+}
+#product-name .container #productName .col-7 .size {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1ED90E;
+}
+#product-name .container #productName .col-7 .items-size .item {
+  background-color: #cfcfcf;
+  font-size: 22px;
+  font-weight: 600;
+  color: #140101;
+}
+#product-name .container #productName .col-7 .price {
+  font-size: 22px;
+  font-weight: 600;
+  color: #FC0303;
+}
+#product-name .container #productName .col-7 .add button {
+  padding: 10px 20px;
+  border-radius: 0px;
+  margin-top: 10px;
+  background-image: linear-gradient(to left, #3e20f8 15%, #d017ee 100%);
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+#Feature-detail .container h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+}
+#Feature-detail .container .row .col-4 {
+  padding: 30px;
+}
+#Feature-detail .container .row .col-4 .card {
+  border: none;
+  border-radius: none;
+  background-color: #f8f8f8;
+}
+#Feature-detail .container .row .col-4 .card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+#Feature-detail .container .row .col-4 .card img:hover {
+  transform: translateY(-40px) rotate(-10deg);
+}
+#Feature-detail .container .row .col-4 .card .card-body p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+#Feature-detail .container .row .col-4 .card .card-body button a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 300;
+  color: #000;
+}
+#Feature-detail .container .row .col-4 .card .card-body .price {
+  background-color: #f3f3f3;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
 }

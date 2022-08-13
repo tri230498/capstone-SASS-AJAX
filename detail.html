@@ -42,11 +42,14 @@
             <i class="fa-solid fa-cart-shopping"></i>(1)
           </span>
           <a class="Login" href=""> Login </a>
-          <a class="Register" href="./register.html" target="_blank"> Register </a>
+          <a class="Register" href="./register.html" target="_blank">
+            Register
+          </a>
         </form>
       </div>
     </header>
     <!-- end header -->
+
     <section id="menu">
       <div class="container">
         <a href="./index.html" class="home">Home</a>
@@ -58,15 +61,51 @@
     </section>
     <!-- end menu -->
 
-    <section id="Feature">
+    <section id="product-name">
       <div class="container">
-        <h2 class="text-center py-5">-Realate Froduct-</h2>
-        <div class="row" id="item-realate">
-
+        <div class="row" id="productName">
+          <!-- <div class="col-5">
+            <div class="img">
+              <img src="" alt="" />
+            </div>
+          </div>
+          <div class="col-6">
+            <h4>Product name</h4>
+            <p class="dess">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quae
+              ipsum ex earum illum quo at doloribus, modi tenetur eius aut fuga
+              dolorem minima atque maxime dicta doloremque saepe similique?
+            </p>
+            <p class="size">Available size</p>
+            <div class="items-size d-flex">
+              <div class="item p-2 bg-secondary me-3">38</div>
+              <div class="item p-2 bg-secondary me-3">39</div>
+              <div class="item p-2 bg-secondary me-3">40</div>
+              <div class="item p-2 bg-secondary me-3">41</div>
+              <div class="item p-2 bg-secondary me-3">42</div>
+            </div>
+            <p class="price text-danger">85$</p>
+            <div class="amount d-flex align-items-center">
+              <button class="btn btn-primary me-2 rounded-0" style="width: 5%;">+</button>
+              <span>1</span>
+              <button class="btn btn-primary ms-2 rounded-0" style="width: 5%;">-</button>
+            </div>
+            <div class="add">
+              <button class="btn">Add to cart</button>
+            </div>
+          </div> -->
         </div>
       </div>
     </section>
-    <!-- end feature -->
+    <!-- product-name (phần này viết bên js)-->
+
+    <section id="Feature-detail">
+      <div class="container">
+        <h2 class="text-center py-5">-Realate Froduct-</h2>
+        <div class="row" id="item-realate"></div>
+      </div>
+    </section>
+    <!-- end feature (phần này viết bên js)-->
 
     <footer>
       <div class="footer-top">
@@ -94,7 +133,7 @@
                 <h4>register</h4>
                 <p>
                   Create one account to manage everything you do with Nike, from
-                  your shopping preference to your Nike+  activity
+                  your shopping preference to your Nike+ activity
                 </p>
                 <p class="text-danger">Learn more</p>
               </div>
@@ -122,10 +161,16 @@
             </div>
           </div>
         </div>
+        <div id="backtop">
+          <i class="fa-solid fa-angle-up" id="arrow"></i>
+        </div>
       </div>
     </footer>
     <!-- end footer -->
-    <!-- Bootstrap JavaScript Libraries -->
+
+    <!-- ======================================================================== -->
+
+    <!--Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
@@ -146,6 +191,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- js -->
-    <script src="./Js/main.js"></script>
+    <script src="./controllers/detail.js"></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 @import "../Base/base.scss";
 @import "../Themes/variable";
 
+//================== Home =========================//
 #header {
   padding: 15px;
   background-color: $c1-background-primary;
@@ -103,6 +104,10 @@
         img {
           width: 100%;
           padding-left: 100px;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: translateY(-40px) rotate(-10deg);
+          }
         }
       }
       .item-info {
@@ -117,6 +122,17 @@
         }
         p {
           @include text($text-xl, $text-ligth, $c2-text-dark);
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          width: 290px;
+        }
+        button {
+          a {
+            text-decoration: none;
+            @include text($text-xl, $text-ligth, $c4-text-ligth);
+          }
         }
       }
     }
@@ -147,6 +163,12 @@
           border: none;
           border-radius: none;
           background-color: #f8f8f8;
+          img {
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              transform: translateY(-40px) rotate(-10deg);
+            }
+          }
           .card-body {
             h5 {
             }
@@ -155,6 +177,16 @@
               display: -webkit-box;
               -webkit-box-orient: vertical;
               -webkit-line-clamp: 2;
+            }
+            button {
+              a {
+                text-decoration: none;
+                @include text($text-2xl, $text-ligth, $c2-text-dark);
+              }
+            }
+            .price {
+              background-color: $c5-background-gray;
+              @include text($text-xl, $text-semibold, $c2-text-dark);
             }
           }
         }
@@ -205,6 +237,20 @@ footer {
         }
       }
     }
+    #backtop {
+      transition: all ease-out;
+      i {
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        font-size: $text-2xl;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          font-size: $text-3xl;
+        }
+      }
+    }
   }
 }
 
@@ -229,10 +275,10 @@ footer {
         }
       }
       .col-6 {
-       .Gender {
-        border-bottom: 0;
-        margin-top: 25px;
-       }
+        .Gender {
+          border-bottom: 0;
+          margin-top: 25px;
+        }
         input[type="radio"]:checked:after {
           width: 25px;
           height: 25px;
@@ -250,7 +296,103 @@ footer {
           background-color: #ae18e2;
           padding: 10px 50px;
           @include text($text-3xl, $text-regular, $c5-text-dark);
+        }
+      }
+    }
+  }
+}
 
+//=================== Detail ===================//
+
+#product-name {
+  .container {
+    #productName {
+      margin-top: 30px;
+      .col-5 {
+        padding: 0px 100px 100px 100px;
+        .img {
+          background-color: $c5-background-gray;
+          padding: 10px;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .col-7 {
+        h4 {
+          @include text($text-3xl, $text-ligth, $c2-text-dark);
+        }
+        .dess {
+          @include text($text-base, $text-regular, $c6-text-brown);
+        }
+        .size {
+          @include text($text-2xl, $text-regular, $c6-text-green);
+        }
+        .items-size {
+          .item {
+            background-color: $c6-background-gray;
+            @include text($text-2xl, $text-semibold, $c6-text-brown);
+          }
+        }
+        .price {
+          @include text($text-2xl, $text-semibold, $c7-text-danger);
+        }
+        .add {
+          button {
+            padding: 10px 20px;
+            border-radius: 0px;
+            margin-top: 10px;
+            background-image: linear-gradient(to left, #3e20f8 15%, #d017ee 100%);
+            @include text($text-2xl, $text-regular, $c4-text-ligth);
+          }
+        }
+      }
+    }
+  }
+}
+#Feature-detail {
+  .container {
+    h2 {
+      @include text($text-4xl, $text-regular, $c5-text-dark);
+    }
+    .row {
+      .col-4 {
+        padding: 30px;
+        .card {
+          border: none;
+          border-radius: none;
+          background-color: #f8f8f8;
+          img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin-left: 20px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              transform: translateY(-40px) rotate(-10deg);
+            }
+          }
+          .card-body {
+            h5 {
+            }
+            p {
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+            }
+            button {
+              a {
+                text-decoration: none;
+                @include text($text-2xl, $text-ligth, $c2-text-dark);
+              }
+            }
+            .price {
+              background-color: $c5-background-gray;
+              @include text($text-xl, $text-semibold, $c2-text-dark);
+            }
+          }
         }
       }
     }
